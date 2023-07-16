@@ -1,0 +1,83 @@
+.active {
+  background-color: #319a9f;
+}
+
+#beznaglowka {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 21px;
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Footer */
+
+#center {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.dolnanawigacja {
+  text-align: center;
+}
+
+.dolnanawigacja a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.dolnanawigacja a:hover {
+  background-color: #ddd;
+}
+
+.previous {
+  background-color: #f1f1f1;
+}
+
+.next {
+  background-color: #f1f1f1;
+  color: white;
+}
+
+video {
+  width: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}

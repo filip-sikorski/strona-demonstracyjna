@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Strona" />
+    <meta name="description" content="Strona" />
+    <meta name="author" content="Filip Sikorski" />
+    <meta name="robots" content="All" />
+    <link rel="stylesheet" href="basics_projektkoncowy.css" />
+
+    <link rel="stylesheet" href="wspolny.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Moja Strona</h1>
+
+      <p>
+        <a href="https://www.arduino.cc/"
+          ><img src="logo.png" width="142" height="97"
+        /></a>
+      </p>
+    </div>
+
+    <div class="topnav">
+      <a href="#" class="active">Basics </a>
+      <a href="projects_projektkoncowy.html">Projects</a>
+      <a href="advanced_projektkoncowy.html">Advanced</a>
+      <a href="inne_projektkoncowy.html">Inne</a>
+      <a href="opinie_projektkoncowy.html">Opinie</a>
+    </div>
+    <div id="beznaglowka">
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <p>
+              Arduino to platforma, dzięki której w łatwy sposób można tworzyć
+              oprogramowanie na gotowe systemy wbudowane (tzw. systemy
+              embedded). W ramach Arduino jest środowisko komputerowe, język
+              programowania oraz specjalne płytki z oprzyrządowaniem, które
+              można samodzielnie programować.
+            </p>
+            <h2>Czym jest Arduino?</h2>
+            <p>
+              <a href="https://pl.wikipedia.org/wiki/Arduino" target="_blank"
+                >Arduino</a
+              >
+              jest organizacją we Włoszech, która zajmuje się rozwijaniem i
+              utrzymywaniem tego systemu. Co ciekawe, funkcjonuje na zasadach
+              <a
+                href="https://en.wikipedia.org/wiki/Open_source"
+                target="_blank"
+                >open-source</a
+              >
+              zarówno programistycznej, jak i sprzętowej. Oznacza to, że każdy,
+              za darmo, ma wgląd do projektów płytek drukowanych, ich schematów
+              ideowych oraz do kodu źródłowego udostępnianego oprogramowania.
+              Również za darmo są udostępniane biblioteki do różnych urządzeń
+              peryferyjnych.
+            </p>
+            <h3>Klony i podróbki</h3>
+            <p>
+              Wiele azjatyckich firm pojęło siłę Arduino i zaczęło sprzedawać
+              własne kopie tych płytek, zwane klonami. Mają dokładnie te same
+              funkcje, te same wymiary, czasem nawet napis „made in Italy”,
+              który znajduje się na oryginalnych produktach, jest niezmieniony.
+              Jednak nie wspierają one pierwotnej organizacji, a często mają
+              również gorszą jakość wykonania lub pozbawiono ich niektórych
+              podzespołów.
+            </p>
+            <h2>Co zawierają płytki Arduino?</h2>
+            <p>
+              Na brzegach płytki znajdują się złącza typu szpilkowego (goldpin),
+              które umożliwiają podłączanie rozmaitych peryferiów: diod LED,
+              przycisków, wyświetlaczy, buzzerów i wiele więcej. Z tego wynika
+              siła Arduino: użytkownik nie musi się martwić o projektowanie,
+              trawienie i lutowanie płytki pod dany mikrokontroler, ponieważ to
+              wszystko dostaje gotowe.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Mrygacz</h2>
+            <p>
+              Uważam że człowiek najlepej uczy się w praktyce więc przyjrzyjmy
+              się przykładowemu projektowi mrygacza jak nazwa może sugerować
+              polega on na diodzie która się włącza i wyłącza.Aby stworzyć
+              mrygacza należy zacząć od przygotowania obwodu, w tym mini
+              projekcie użyjemy
+              <a
+                target="_blank"
+                href="https://botland.com.pl/diody-led/4535-dioda-led-10mm-czerwona-10szt-5903351243858.html"
+                >czerwoną diodę</a
+              >,
+              <a
+                href="https://botland.com.pl/plytki-stykowe/19943-plytka-stykowa-justpi-830-otworow-5904422328610.html"
+                target="_blank"
+                >płytkę stykową</a
+              >,
+              <a
+                href="https://botland.com.pl/przewody-polaczeniowe/1022-przewody-polaczeniowe-mesko-meskie-65szt-5904422304409.html"
+                target="_blank"
+                >kable połączeniowe</a
+              >
+              oraz oczywiście samo
+              <a
+                href="https://botland.com.pl/arduino-seria-podstawowa-oryginalne-plytki/1060-arduino-uno-rev3-a000066-7630049200050.html"
+                target="_blank"
+                >arduino</a
+              >. Wszystkie komponenty wymienione na tej stronie są jednocześnie
+              linkami do sklepu w którym można takowe nabyć. Diodę wpinam do
+              płytki stykowej dłuższą nóżkę łączę z pinem 10 a krótszą z
+              uziemieniem czyli z pinem GND, schemat jest dostępny
+              <a href="mrygacz_schemat.JPG">tutaj</a>. Poniżej jest kod do
+              programu który zuploadowałem na płytkę.
+            </p>
+            <div class="center">
+              <img src="kod_migacz.png" class="kod" />
+            </div>
+            <p>
+              Po prawej stronie jest film z działającego mrygacza a więcej
+              projektów takich jak np.Wyświetlacz LCD albo miernik odległości
+              można zobaczyć w zakładce Projects.
+            </p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <img class="arduino1" src="arduino_uno.jpg" />
+            <h2>Arduino Uno</h2>
+            <p>
+              Arduino przychodzi w różnych "smakach" na tej stronie będę
+              się opierał na tej wersji, jej pełna nazwa to
+              <a
+                href="https://docs.arduino.cc/hardware/uno-rev3"
+                target="_blank"
+                >Arduino Uno SMD R3</a
+              >, a tabelke z najpopularniejszymi dystrybucjami można zobaczyć w
+              zakładce inne
+            </p>
+          </div>
+
+          <div class="card">
+            <video id="mrygacz" class="powiekszalne" autoplay muted loop>
+              <source src="migacz.mp4" type="video/mp4" />
+            </video>
+            <h2>Działający mrygacz</h2>
+            <p>
+              Filmy oraz zdjęcia na tej stronie można powiększyć poprzez
+              kliknięcie
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h4>Źródła:</h4>
+        <ol>
+          <li>
+            <a
+              href="https://sklep.avt.pl/blog/arduino-co-to-jest-i-jak-zaczac"
+              target="_blank"
+              >https://sklep.avt.pl/blog/arduino-co-to-jest-i-jak-zaczac</a
+            >
+          </li>
+          <li>
+            <a href="https://botland.com.pl/" target="_blank"
+              >https://botland.com.pl/</a
+            >
+          </li>
+          <li>
+            <a href="https://www.circuito.io/" target="_blank"
+              >https://www.circuito.io/</a
+            >
+          </li>
+          <li>
+            <a href="https://pl.wikipedia.org/wiki/Arduino" target="_blank"
+              >https://pl.wikipedia.org/wiki/Arduino</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Arduino" target="_blank"
+              >https://en.wikipedia.org/wiki/Arduino</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://forbot.pl/blog/leksykon/arduino-uno"
+              target="_blank"
+              >https://forbot.pl/blog/leksykon/arduino-uno</a
+            >
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

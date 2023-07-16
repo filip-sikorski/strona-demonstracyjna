@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Strona" />
+    <meta name="description" content="Strona" />
+    <meta name="author" content="Filip Sikorski" />
+    <meta name="robots" content="All" />
+    <link rel="stylesheet" href="projects_projektkoncowy.css" />
+    <link rel="stylesheet" href="wspolny.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Moja Strona</h1>
+
+      <p>
+        <a href="https://www.arduino.cc/"
+          ><img src="logo.png" width="142" height="97"
+        /></a>
+      </p>
+    </div>
+
+    <div class="topnav">
+      <a href="basics_projektkoncowy.html">Basics </a>
+      <a href="#" class="active">Projects</a>
+      <a href="advanced_projektkoncowy.html">Advanced</a>
+      <a href="inne_projektkoncowy.html">Inne</a>
+      <a href="opinie_projektkoncowy.html">Opinie</a>
+    </div>
+    <div id="beznaglowka">
+      <div class="column">
+        <div class="card">
+          <div class="center">
+            <h3>Płynomierz</h3>
+          </div>
+          <p>
+            Następny projekt będzie trochę łatwiejszy do zrozumienia, ponieważ
+            częśćiowo pokrywa się on z projektem na poprzedniej stronie. Jest to
+            urządzenie podobne do
+            <a
+              href="http://sklep.altix.pl/content/images/thumbs/0001707_cricket-plynomierz-czujnik-poziomu-cieczy.jpeg"
+              target="_blank"
+              >płynomierzy</a
+            >
+            mierzących poziom wody dla osób niewidomych, a polega on na tym że
+            <a
+              href="https://botland.com.pl/czujniki-poziomu-cieczy/7279-czujnik-poziomu-cieczy-analogowy-iduino-se045-5903351241281.html?cd=1564049911&ad=58987843373&kd=&gclid=CjwKCAjw7cGUBhA9EiwArBAvot6_kiO6dqYZ_IiKnd7xhlIV-FQCSuBnjnt1KOtpzM8ZSSYdm8enlxoC3O4QAvD_BwE"
+              target="_blank"
+              >czujnik poziomu cieczy</a
+            >
+            jest przymocowany do górnej części szklanki. Obwód wyposażyłem
+            również w
+            <a
+              href="https://botland.com.pl/diody-led-rgb/14294-modul-z-dioda-led-rgb-iduino-se010-5903351241922.html?cd=1564049911&ad=58987843373&kd=&gclid=CjwKCAjw7cGUBhA9EiwArBAvojxcVuJT7F9vv6iiqQ4uiVOHBI_TxemCiLpgpZ5z5ReEwiai8a9C1hoCU64QAvD_BwE"
+              target="_blank"
+              >diodę LED RGB</a
+            >
+            aby zasygnalizować wizualnie zapełnienie szklanki poprzez
+            zaświecenie się diody na kolor czerwony, oraz w ten sam głośnik
+            wyciągnięty ze starego telefonu stacjonarnego aby zasygnalizować
+            zapełnienie szklanki również sygnałem dźwiękowym. Schemat jest
+            dostępny <a href="schemat_płynomierz.JPG" target="_blank">tutaj</a>.
+            A tak prezentuje się cały zestaw razem ze szklanką:
+          </p>
+          <div class="center">
+            <img src="zdj_płynomierz.jpg" class="image" />
+          </div>
+          <p>Tradycyjnie zostało nam trochę kodowania:
+          <div class="center">
+            <img src="kod_plynomierz.JPG" class="kod" />
+          </div>
+        </p>
+        <p>A oto efekt końcowy:</p>
+        <div class="center">
+          <video controls>
+            <source src="plynomierz.mp4" type="video/mp4" />
+          </video>
+          <p>Jak widać wszystko również działa jak natura chciała. Plik programu dostępny jest <a href="https://zstielodz-my.sharepoint.com/:f:/g/personal/f_sikorski_zsti_elodz_edu_pl/EpoiHXu3QHNLoy0hScB7xm8B01nt69gcgHHticm4bKH0gQ?e=J45nHy" target="_blank">tutaj</a>.</p>
+        </div>
+
+          <div class="dolnanawigacja">
+            <a href="projects_projektkoncowy.html" class="previous"
+              >&#8249; Poprzednia</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h4>Źródła:</h4>
+        <ol>
+          
+          <li><a href="https://sklep.avt.pl/blog/arduino-co-to-jest-i-jak-zaczac" target="_blank">https://sklep.avt.pl/blog/arduino-co-to-jest-i-jak-zaczac</a></li>
+          <li><a href="https://botland.com.pl/" target="_blank">https://botland.com.pl/</a></li>
+          <li><a href="https://www.circuito.io/" target="_blank">https://www.circuito.io/</a></li>
+          <li><a href="https://pl.wikipedia.org/wiki/Arduino" target="_blank">https://pl.wikipedia.org/wiki/Arduino</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Arduino" target="_blank">https://en.wikipedia.org/wiki/Arduino</a></li>
+          <li><a href="https://forbot.pl/blog/leksykon/arduino-uno" target="_blank">https://forbot.pl/blog/leksykon/arduino-uno</a></li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+
+.active {
+  background-color: #319a9f;
+}
+body {
+  font-family: Arial;
+
+  background: #319a9f;
+}
+#beznaglowka {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.header {
+  padding-top: 0px;
+  padding-bottom: 2px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+
+  font-size: 25px;
+  text-align: center;
+}
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.2s;
+}
+.topnav a:active {
+  background-color: #ddd;
+  color: rgb(255, 0, 0);
+  transition: 0.1s;
+}
+video.powiekszalne:active,
+#beznaglowka img:active {
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 5;
+}
+.kod {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  outline: 2px dashed;
+}
+#beznaglowka img,
+video.powiekszalne {
+  transition: 1s;
+  cursor: zoom-in;
+}
+#beznaglowka a {
+  text-decoration: none;
+  color: #319a9f;
+}
+.footer {
+  margin-top: 5px;
+  color: white;
+}
+ol li a {
+  color: rgb(255, 255, 255) !important;
+}
+label {
+  color: white;
+}

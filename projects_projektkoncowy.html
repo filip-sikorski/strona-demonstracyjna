@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Strona" />
+    <meta name="description" content="Strona" />
+    <meta name="author" content="Filip Sikorski" />
+    <meta name="robots" content="All" />
+    <link rel="stylesheet" href="projects_projektkoncowy.css" />
+    <link rel="stylesheet" href="wspolny.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Moja Strona</h1>
+
+      <p>
+        <a href="https://www.arduino.cc/"
+          ><img src="logo.png" width="142" height="97"
+        /></a>
+      </p>
+    </div>
+
+    <div class="topnav">
+      <a
+        href="basics_projektkoncowy.html"
+        >Basics
+      </a>
+      <a href="#" class="active">Projects</a>
+      <a href="advanced_projektkoncowy.html">Advanced</a>
+      <a
+        href="inne_projektkoncowy.html"
+        >Inne</a
+      >
+      <a href="opinie_projektkoncowy.html">Opinie</a>
+    </div>
+    <div id="beznaglowka">
+      <div class="column">
+        <div class="card">
+          <p>
+            Na poprzedniej karcie opisałem bardzo prosty przykład działania tego
+            systemu, lecz Arduino pozwala na wiele więcej niż zwykła mrygająca
+            dioda. Na tej karcie opiszę 2 większe projekty od początku do końca,
+            co pozwoli lepiej zapoznać się z możliwościami tej płytki.
+          </p>
+          </div>
+          <div class="card">
+          <h3>Wyświetlacz</h3>
+          <p>
+            Jeżeli chodzi o wyświetlacze i arduino to mamy dużo opcji ponieważ
+            są wyświetlacze <a target="_blank" href="https://botland.com.pl/wyswietlacze-alfanumeryczne-i-graficzne/19732-wyswietlacz-lcd-2x16-znakow-niebieski-ze-zlaczami-justpi-5903351243131.html?cd=1564049911&ad=58987843373&kd=&gclid=CjwKCAjwyryUBhBSEiwAGN5OCNYt4Zw02Bj554C5a0oJUpV42WfnlHJ0AM7ldnVqTXXKFBeR7Wy7GhoCdiYQAvD_BwE">LCD</a>, <a target="_blank" href="https://botland.com.pl/wyswietlacze-segmentowe-i-matryce-led/6449-wyswietlacz-8-segmentowy-x4-14mm-czerwony-wspanoda-5904422357672.html?cd=1564049911&ad=58987843373&kd=&gclid=CjwKCAjwyryUBhBSEiwAGN5OCIe49xkiUD_LW18ST04UskVIFMjYG0qJ4P7oz--NqbjIXoo8Ew-fvhoCm7QQAvD_BwE">LED</a>, <a target="_blank" href="https://botland.com.pl/wyswietlacze-i-ekrany/8866-wyswietlacz-oled-niebieski-graficzny-096-128x64px-i2c-niebieski-5904422337421.html">OLED</a> i jeszcze parę innych,ale w tym
+            artykule użyjemy Wyświetlacza LCD 2x16, liczby 2x16 mogą wyglądać
+            strasznie, ale jest to po prostu oznaczenie że wyświetlacz mieści 16
+            znaków w poziomie i 2 w pionie, czyli ma dwie linijki. Do połączenia
+            wyświetlacza z arduino użyjemy <a target="_blank" href="https://botland.com.pl/konwertery-pozostale/2352-konwerter-i2c-dla-wyswietlacza-lcd-hd44780-5903351248693.html">konwertera I2C</a> który sprawia że
+            zamiast 16 pinów które byśmy musieli wpiąć do arduino zostają nam 4
+            z czego 2 do zasilania(5V) a pozostałe 2 wpinam do portu SCL oraz
+            SDA, schemat jest dostępny <a target="_blank" href="https://lastminuteengineers.b-cdn.net/wp-content/uploads/arduino/Wiring-I2C-LCD-Display-with-Arduino.png">tutaj</a>.
+          </p>
+          <P>
+          <div class="center">
+            <img src="kod_wyswietlacz.JPG" class="kod" />
+          </div>
+        </P>
+        <p>
+          Po odrobinie kodowania możemy się cieszyć działającym wyświetlaczem:
+        </p>
+        <div class="center">
+        <img src="zdj_wyswietlacz.jpg" class="image">
+      </div>
+        </div>
+        <div class="card">
+          <h3>Odległościomierz</h3>
+          <p>Wyświetlacz wyświetlający jeden tekst cały czas(tak zwanego <a target="_blank" href="https://pl.wikipedia.org/wiki/Tekstowy_typ_danych">stringa</a>) nie wydaje się być zbyt satysfakcjonującym projektem. Aby to zmienić możemy do naszego zestawu dodać ultadźwiękowy sensor odległości <a target="_blank" href="https://botland.com.pl/ultradzwiekowe-czujniki-odleglosci/1420-ultradzwiekowy-czujnik-odleglosci-hc-sr04-2-200cm-5903351241366.html?cd=1050025856&ad=50530953494&kd=&gclid=CjwKCAjwyryUBhBSEiwAGN5OCF-10Z1VrOKfF9Vnb8ENFJXOpDdIf-W5cnoTAhjVMDEfQPzqFNuTRRoCClsQAvD_BwE">HC-SR04</a> i wraz z wyświetlaczem stworzyć swoisty odległościomierz podobny do sensorów pomagających w parkowaniu samochodu.Schemat połączenia sensora z płytką można zobaczyć <a href="https://hackster.imgix.net/uploads/attachments/991561/uploads2ftmp2ff6c8de93-288c-4663-9a29-31c8e61172812fultrasonic5_WCDWvutJmv.png?auto=compress%2Cformat&w=680&h=510&fit=max" target="_blank">tutaj</a>. Po wpięciu wszystkiego pozostało dodać parę linijek do programu:(aby powiększyć należy przytrzymać)</p>
+          <div class="center">
+            <img src="kod_odleglosciomierz.JPG" class="kod" />
+          
+          <h4>Odległość: 10cm</h4>
+          <img src="odleglosciomierz_1.jpg" class="image">
+          <p>Jak widać na załączonym obrazku nasza "ściana" jest w odległości 10 cm od odległościomierza i dokładnie taki sam wynik uzyskaliśmy na wyświetlaczu jednak czy będzie tak samo w przypadku 15cm?</p>
+          <h4>Odległość: 15cm</h4>
+          <img src="odleglosciomierz_2.jpg" class="image">
+          <p>Tutaj również wszystko się zgadza, czyli nasz odległościomierz działa! Na następnej stronie opisany jest asystent Parkowania.</p>
+          
+          
+          </div>
+        </div>
+        <div class="card">
+          <div class="center">
+            <h3>Asystent Cofania</h3>
+          </div>
+          <p>
+            W nowoczesnych samochodach są zainstalowane systemy wspomagające
+            parkowanie oraz cofanie działające na zasadzie odległościomierza
+            oraz jakiegoś sygnału np.dźwiękowego gdy samochód zbliży się na
+            określoną odległość do np. innego samochodu. Z pomocą arduino
+            zrobimy bardzo podobny system. W tym celu użyjemy
+            <a
+              target="_blank"
+              href="https://botland.com.pl/buzzery-generatory-dzwieku/786-buzzer-z-generatorem-5v-12mm-tht-5904422366940.html"
+              >Buzzera 5V </a
+            >chociaż w moim przypadku jako zamiennik będzie służył głośnik ze
+            starego telefonu stacjonarnego co da lepszy efekt.
+          </p>
+          <p>
+            Oczywiście trzeba zacząć od połączenia buzzera z arduino, pierwszy
+            pin wpinam do uziemienia(GND) a drugi do PIN 9 schemat można
+            zobaczyć
+            <a
+              target="_blank"
+              href="https://www.circuitgeeks.com/wp-content/uploads/2021/03/Arduino-Buzzer.png"
+              >tutaj</a
+            >, teraz zostało to zaprogramować.
+          </p>
+          <div class="center">
+            <img src="kod_asystent.JPG" class="kod" />
+          </div>
+          <p>
+            Wyświetlony kod jest tylko tym co dodałem do programu jak można
+            zaobserwować jest on bardzo prosty ale czy asystent parkowania
+            działa?
+          </p>
+
+          <div class="center">
+            <video controls>
+              <source src="asystent_film.mp4" type="video/mp4" />
+            </video>
+            <p>Jak widać wszystko działa jak natura chciała. Plik programu dostępny jest <a href="https://zstielodz-my.sharepoint.com/:f:/g/personal/f_sikorski_zsti_elodz_edu_pl/EoF-27TVTSZEqQo3lz8i5DcBgd4LkOaxqqTYTRco0LiukA?e=4nlBpv" target="_blank">tutaj</a>.</p>
+          </div>
+        
+        
+        <div class="dolnanawigacja">
+          <a href="projects_projektkoncowy_2.html" class="next">Następna &#8250;</a>
+        </div>
+      </div>
+      </div>
+      
+    
+      <div class="footer">
+        <h4>Źródła:</h4>
+        <ol>
+          
+          <li><a href="https://sklep.avt.pl/blog/arduino-co-to-jest-i-jak-zaczac" target="_blank">https://sklep.avt.pl/blog/arduino-co-to-jest-i-jak-zaczac</a></li>
+          <li><a href="https://botland.com.pl/" target="_blank">https://botland.com.pl/</a></li>
+          <li><a href="https://www.circuito.io/" target="_blank">https://www.circuito.io/</a></li>
+          <li><a href="https://pl.wikipedia.org/wiki/Arduino" target="_blank">https://pl.wikipedia.org/wiki/Arduino</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Arduino" target="_blank">https://en.wikipedia.org/wiki/Arduino</a></li>
+          <li><a href="https://forbot.pl/blog/leksykon/arduino-uno" target="_blank">https://forbot.pl/blog/leksykon/arduino-uno</a></li>
+        </ol>
+      </div>
+    </div>
+    
+  </body>
+</html>
